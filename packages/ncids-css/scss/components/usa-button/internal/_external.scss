@@ -1,0 +1,8 @@
+@import './external-link-mixin';
+
+$theme-internal-domains: (".gov","mailto:","javascript:");
+$svg-size: 24; 
+
+a.usa-button{
+	@include external-button-link($theme-internal-domains, $svg-size, "white");
+}
