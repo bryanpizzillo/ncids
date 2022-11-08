@@ -1,0 +1,17 @@
+.nci-cta-button {
+	//white-space: nowrap;
+	
+	@include place-icon(
+		(
+			"name": "navigate_next",
+			"svg-height": $svg-size,
+			"svg-width": $svg-size,
+			"height": 2ex,
+			"color": currentColor
+		),
+		"after",
+		"1px",
+		top,
+		$color
+	);
+}

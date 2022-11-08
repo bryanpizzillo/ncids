@@ -1,0 +1,59 @@
+.nci-cta-strip {
+	background-color: color($theme-cta-strip-dark-background-color);
+	padding:units(2) units(1) units(1);
+
+	@include at-media('mobile') {
+		padding:units(1) units(1) 0;
+	}
+	@include at-media('mobile-lg') {
+		padding:units(1) units(2) 0;
+	}
+	@include at-media('tablet') {
+		padding:units(1) 0 0;
+	}
+	@include at-media('desktop') {
+		padding:units(1) units(8) 0;
+	}
+	@include at-media('widescreen') {
+		padding:units(1) units(6) 0;
+	}
+
+	ul{
+		align-items: center;
+
+		@include at-media('tablet') {
+			@include u-display("flex");
+		}
+
+		@include at-media('desktop-lg') {
+
+		}
+
+		margin:0;
+		padding:0 units(2);
+		width: 100%;
+		li {
+			flex: 1 0 33%;
+
+			@include at-media('desktop-lg') {
+			
+			}
+
+			@include at-media('tablet') {
+				@include u-display("inline-block")
+			}
+			
+			list-style-type: none;
+			padding:0 units(1) units(1);
+
+			a {
+				width:100%;
+				@include at-media('tablet') {
+					padding-left:units(1);
+					padding-right:units(1);
+				}
+			}
+		}
+	}
+
+}
