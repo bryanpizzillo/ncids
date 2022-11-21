@@ -1,7 +1,7 @@
 module.exports = [
 	{
-		label: 'nci-feature-card default',
-		storyId: 'components-nci-feature-card--default',
+		label: 'nci-card default',
+		storyId: 'components-nci-card--default',
 		viewports: [
 			{
 				label: 'mobile',
@@ -26,8 +26,8 @@ module.exports = [
 		],
 	},
 	{
-		label: 'nci-feature-card feature-card-row',
-		storyId: 'components-nci-feature-card--feature-card-row',
+		label: 'nci-card card-row',
+		storyId: 'components-nci-card--card-row',
 		viewports: [
 			{
 				label: 'mobile',
@@ -52,8 +52,8 @@ module.exports = [
 		],
 	},
 	{
-		label: 'nci-feature-card feature-card-in-text-left',
-		storyId: 'components-nci-feature-card--feature-card-in-text-left',
+		label: 'nci-card card-in-text-left',
+		storyId: 'components-nci-card--card-in-text-left',
 		viewports: [
 			{
 				label: 'mobile',
@@ -78,8 +78,8 @@ module.exports = [
 		],
 	},
 	{
-		label: 'nci-feature-card feature-card-in-text-right',
-		storyId: 'components-nci-feature-card--feature-card-in-text-right',
+		label: 'nci-card card-in-text-right',
+		storyId: 'components-nci-card--card-in-text-right',
 		viewports: [
 			{
 				label: 'mobile',

@@ -1,8 +1,8 @@
 /* Grid Row */
 .nci-card-group {
+    @extend .usa-card-group;
 	@include grid-gap;
 	@include grid-row;
-	padding-inline-start: 0;
 
 	/* Grid Column */
 	& > li {

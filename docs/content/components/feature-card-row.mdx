@@ -35,9 +35,9 @@ The feature card row displays our custom Card component in a grid row of 3 cards
 ```html
 <div class="grid-container margin-y-3">
 	<ul class="nci-card-group">
-		<li class="nci-feature-card">
+		<li class="nci-card">
 			<a href="https://www.cancer.gov" aria-label="Feature Card">
-				<picture>
+				<picture class="nci-card__image">
 					<source
 						media="(max-width: 639px)"
 						srcset="./../assets/images/news1-16x9.jpg"
@@ -52,18 +52,18 @@ The feature card row displays our custom Card component in a grid row of 3 cards
 					/>
 					<img src="./../assets/images/news1-16x9.jpg" />
 				</picture>
-				<div class="nci-feature-card__text">
-					<h2>CRCHD Diversity Training</h2>
-					<p>
+				<div class="nci-card__body">
+					<h2 class="nci-card__title">CRCHD Diversity Training</h2>
+					<p class="nci-card__description>
 						Treatment for severe COVID-19 with interferons decreased the viral
 						load of SARS-CoV-2, a new study found.
 					</p>
 				</div>
 			</a>
 		</li>
-		<li class="nci-feature-card">
+		<li class="nci-card">
 			<a href="https://www.cancer.gov" aria-label="Feature Card">
-				<picture>
+				<picture class="nci-card__image">
 					<source
 						media="(max-width: 639px)"
 						srcset="./../assets/images/news2-16x9.jpg"
@@ -78,20 +78,19 @@ The feature card row displays our custom Card component in a grid row of 3 cards
 					/>
 					<img src="./../assets/images/news2-16x9.jpg" />
 				</picture>
-				<div class="nci-feature-card__text">
-					<h2>Grant Application Development, Submission, Review, & Award</h2>
-					<p>
+				<div class="nci-card__body">
+					<h2 class="nci-card__title>Grant Application Development, Submission, Review, & Award</h2>
+					<p class="nci-card__description>
 						In patients with certain variations in the OAS1 gene, treatment for
-						severe COVID-19 with interferons, a type of protein that can help
-						the body’s immune system fight infections, decreased the viral load
+						severe COVID-19 with interferons decreased the viral load
 						of SARS-CoV-2, a new study found.
 					</p>
 				</div>
 			</a>
 		</li>
-		<li class="nci-feature-card">
+		<li class="nci-card">
 			<a href="https://www.cancer.gov" aria-label="Feature Card">
-				<picture>
+				<picture class="nci-card__image">
 					<source
 						media="(max-width: 639px)"
 						srcset="./../assets/images/news3-16x9.jpg"
@@ -106,9 +105,9 @@ The feature card row displays our custom Card component in a grid row of 3 cards
 					/>
 					<img src="./../assets/images/news3-16x9.jpg" />
 				</picture>
-				<div class="nci-feature-card__text">
-					<h2>Capacitación en diversidad CRCHD</h2>
-					<p>
+				<div class="nci-card__body">
+					<h2 class="nci-card__title>Capacitación en diversidad CRCHD</h2>
+					<p class="nci-card__description>
 						El tratamiento para la COVID-19 grave con interferones disminuyó la
 						carga viral del SARS-CoV-2, según encontró un nuevo estudio.
 					</p>
@@ -125,5 +124,5 @@ Import this Sass partial into your stylesheet
 
 ```scss
 // Single Card Component
-@import '@nciocpl/ncids-css/scss/components/nci-feature-card/nci-feature-card';
+@import '@nciocpl/ncids-css/scss/components/nci-card/nci-card';
 ```
